@@ -6,7 +6,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px;
 
 }
 .left, .right {
@@ -26,6 +26,7 @@ nav {
 }
 
 .search-form {
+    padding: 200px;
     text-align: center;
     
 }
@@ -52,6 +53,11 @@ nav {
     max-width: 584px;
     font-family: Roboto,arial,sans-serif;
     font-size: 16px;
+    padding-left: 10px;
+}
+
+.search-engine:focus {
+    outline: none;
 }
 
 .search-button:hover {

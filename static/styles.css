@@ -1,18 +1,39 @@
+
 .logo {
     width: 272px;
     height: 92px;
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 
-.left {
-    text-align:left;
+}
+.left, .right {
+    display: flex;
 }
 
-.right {
-    text-align: right;
+.header-text {
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    padding-right: 15px;
+}
+
+.header-text:hover {
+    text-decoration: underline;
 }
 
 .search-form {
     text-align: center;
+    
+}
+
+.search-engine:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    border: 1px solid #dadce0;
+    color: #202124;
 }
 
 .search-engine {
@@ -33,6 +54,13 @@
     font-size: 16px;
 }
 
+.search-button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
 .search-button {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
@@ -50,14 +78,5 @@
     user-select: none
 }
 
-.header-text {
-    color: rgba(0,0,0,.87);
-    text-decoration: none;
-    font-family: arial,sans-serif;
-    font-size: 14px;
-    line-height: normal;
-    padding-right: 15px;
-
-}
 
 

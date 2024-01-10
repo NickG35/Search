@@ -25,6 +25,8 @@
     box-shadow: none;
     border-radius: 24px;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 638px;
     max-width: 584px;
     font-family: Roboto,arial,sans-serif;

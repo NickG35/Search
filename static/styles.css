@@ -71,8 +71,29 @@ nav {
 }
 
 .advanced-button {
-    width: 75%;
+    width: 76.5%;
     text-align: center;
+}
+
+.blue-button {
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 16px;
+    height: 27px;
+    line-height: 27px;
+    min-width: 54px;
+    outline: 0;
+    padding: 0 8px;
+}
+
+.blue-button:hover {
+    background-color: #357ae8;
+    border: 1px solid #2f5bb7;
 }
 
 .advance-input {
@@ -83,7 +104,6 @@ nav {
     height: 25px;
     width: 550px;
 }
-
 .right-div {
     display: inline-block;
     width: 32%;

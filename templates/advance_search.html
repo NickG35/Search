@@ -14,6 +14,61 @@
     </nav>
     <p class="advanced-header">Advanced Search</p>
 </div>
+<form>
+    <!--last thing i worked on was formatting the advanced search inputs in the form-->
+    <div class="left-header">
+        <span class="left-text">Find pages with... </span>
+    </div>
+    <div class="form-section">
+        <div class="advanced-form">
+            <div class="left-div">
+                <span class="left-text">all these words: </span>
+            </div>
+            <div class="inputs">
+                <input class="advance-input" autofocus type="text" name="as_q">  
+            </div>
+            <div class="right-div">
+                <span class="right-text">Type the important words: tricolor rat terrier</span>
+            </div>      
+        </div>
+        <div class="advanced-form">
+            <div class="left-div">
+                <span class="left-text">this exact word or phrase: </span>
+            </div>
+            <div class="inputs">
+                <input class="advance-input" type="text" name="as_epq">   
+            </div> 
+            <div class="right-div">
+                <span class="right-text">Put exact words in quotes:  "rat terrier"</span>
+            </div>   
+        </div>
+        <div class="advanced-form">
+            <div class="left-div">
+                <span class="left-text">any of these words: </span>
+            </div>
+            <div class="inputs">
+                <input class="advance-input" type="text" name="as_oq"> 
+            </div>
+            <div class="right-div">
+                <span class="right-text">Type OR between all the words you want:  miniature OR standard</span>
+            </div>       
+        </div>
+        <div class="advanced-form">
+            <div class="left-div">
+                <span class="left-text">none of these words: </span>
+            </div>
+            <div class="inputs">
+                <input class="advance-input" type="text" name="as_eq"> 
+            </div>
+            <div class="right-div">
+                <span class="right-text">Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</span>
+            </div>            
+        </div>                  
+    </div>
+    <div class="advanced-button">
+        <input type="submit" class="blue-button" value="Advanced Search">
+    </div>
+</form>
     
 </body>
 </html>

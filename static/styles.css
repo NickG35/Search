@@ -39,7 +39,7 @@ nav {
 
 .advanced-form {
     display: flex;
-    margin: 10px;
+    margin: 0px;
     width: 1150px;
     align-items: center;
 }
@@ -54,7 +54,7 @@ nav {
 }
 
 .left-div {
-    margin-left: 29px;
+    margin-left: 40px;
     float: left;
     display: inline-block;
     min-width: 167px;
@@ -114,8 +114,12 @@ nav {
     padding-left: 5px;
     vertical-align: middle;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.example {
+    font-family: monospace;
+}
 
 .header-text {
     color: rgba(0,0,0,.87);

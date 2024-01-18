@@ -1,3 +1,4 @@
+@import url('style.css');
 
 .logo {
     width: 272px;
@@ -22,57 +23,58 @@ nav {
 }
 
 .small-google {
+    display: none;
     height: 24px;
     width: 74px;
 }
 
 .top-advance {
     border-bottom: 1px solid #ebebeb;
+    width: 100%;
+    padding: 0px;
 }
 
 .advanced-header {
     color: #d93025;
     font-size: 20px;
-    margin: 25px 35px;
+    margin: 25px 5px;
     font-family: arial, sans-serif;
+    width: 100%;
+    padding: 0px;
 }
 
+
 .advanced-form {
-    display: flex;
     margin: 0px;
-    width: 1150px;
     align-items: center;
 }
 
 .inputs {
-    float: left;
-    display: inline-block;
-    min-width: 167px;
-    min-height: 41px;
     vertical-align: middle;
-    width: 50%;
+    margin-bottom: 10px;
 }
 
 .left-div {
-    margin-left: 40px;
-    float: left;
-    display: inline-block;
+    margin-left: 4px;
     min-width: 167px;
     width: 16%;
     height: 32px;
     color: #222;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .form-section {
-    width: 100%;
+    width: 90%;
 }
 
 .advanced-button {
-    width: 76.5%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    margin-top: 10px;
 }
 
 .blue-button {
@@ -89,12 +91,14 @@ nav {
     min-width: 54px;
     outline: 0;
     padding: 0 8px;
+    margin-top: 15px;
 }
 
 .blue-button:hover {
     background-color: #357ae8;
     border: 1px solid #2f5bb7;
 }
+    
 
 .advance-input {
     border-radius: 1px;
@@ -102,10 +106,10 @@ nav {
     border-top: 1px solid #c0c0c0;
     font-size: 13px;
     height: 25px;
-    width: 550px;
+    width: 95%;
 }
 .right-div {
-    display: inline-block;
+    display: none;
     width: 32%;
     min-width: 160px;
     margin: 0 0 8px 1%;
@@ -134,7 +138,7 @@ nav {
 }
 
 .search-form {
-    padding: 200px;
+    margin-top: 30px;
     text-align: center;
     
 }
@@ -147,19 +151,33 @@ nav {
 
 .left-header {
     display: flex;
-    margin-left: 35px;
-    margin-bottom: 20px;
     margin-top: 40px;
     padding: 5px;
-    width: 48%;
+    width: 50%;
+}
+
+#left-text {
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    height: 32px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #right-text {
-    margin-left: auto;
     font-size: 13px;
     font-weight: 700;
     color: #777;
     font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    width: 22%;
+    min-width: 160px;
+    vertical-align: middle;
+    margin-left: auto;
 }
 
 .search-engine {
@@ -174,8 +192,7 @@ nav {
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 638px;
-    max-width: 584px;
+    width: 90%;
     font-family: Roboto,arial,sans-serif;
     font-size: 16px;
     padding-left: 10px;
@@ -207,6 +224,170 @@ nav {
     text-align: center;
     cursor: pointer;
     user-select: none
+}
+
+@media(min-width: 900px) {
+    .search-form {
+        padding: 200px;
+        text-align: center;
+        
+    }
+
+    .search-engine {
+        display: flex;
+        z-index: 3;
+        position: relative;
+        min-height: 44px;
+        background: #fff;
+        border: 1px solid #dfe1e5;
+        box-shadow: none;
+        border-radius: 24px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 638px;
+        max-width: 584px;
+        font-family: Roboto,arial,sans-serif;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .left-header {
+        display: flex;
+        margin-left: 35px;
+        margin-top: 40px;
+        padding: 5px;
+        width: 950px;
+    }
+    
+    #left-text {
+        float: left;
+        display: inline-block;
+        min-width: 167px;
+        width: 16%;
+        height: 32px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #right-text {
+        font-size: 13px;
+        font-weight: 700;
+        color: #777;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        width: 22%;
+        min-width: 160px;
+        vertical-align: middle;
+        margin-left: auto;
+    }
+
+    .top-advance {
+        background-color: white;
+        border-bottom: 1px solid #ebebeb;
+    }
+    
+    .advanced-header {
+        color: #d93025;
+        font-size: 20px;
+        margin: 25px 35px;
+        font-family: arial, sans-serif;
+    }
+    
+    .advanced-form {
+        display: flex;
+        margin: 0px;
+        width: 1150px;
+        align-items: center;
+    }
+    
+    .inputs {
+        float: left;
+        display: inline-block;
+        min-width: 167px;
+        min-height: 41px;
+        vertical-align: middle;
+        width: 50%;
+    }
+    
+    .left-div {
+        margin-left: 40px;
+        float: left;
+        display: inline-block;
+        min-width: 167px;
+        width: 16%;
+        height: 32px;
+        color: #222;
+        font-size: 13px;
+        line-height: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .form-section {
+        width: 100%;
+    }
+    
+    .advanced-button {
+        width: 1450px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .blue-button {
+        background-color: #4d90fe;
+        border: 1px solid #3079ed;
+        color: #fff;
+        border-radius: 2px;
+        font-size: 11px;
+        font-weight: bold;
+        text-align: center;
+        margin-right: 16px;
+        height: 27px;
+        line-height: 27px;
+        min-width: 54px;
+        outline: 0;
+        padding: 0 8px;
+    }
+
+
+.small-google {
+    display: block;
+    height: 24px;
+    width: 74px;
+}
+    
+    .blue-button:hover {
+        background-color: #357ae8;
+        border: 1px solid #2f5bb7;
+    }
+    
+    .advance-input {
+        border-radius: 1px;
+        border: 1px solid #d9d9d9;
+        border-top: 1px solid #c0c0c0;
+        font-size: 13px;
+        height: 25px;
+        width: 550px;
+    }
+    .right-div {
+        display: inline-block;
+        width: 32%;
+        min-width: 160px;
+        margin: 0 0 8px 1%;
+        color: #555;
+        font-size: 11px;
+        padding-left: 5px;
+        vertical-align: middle;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .example {
+        font-family: monospace;
+    }
+
 }
 
 
